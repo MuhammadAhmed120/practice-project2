@@ -1,0 +1,119 @@
+body{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}  
+
+.con{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+    height: 75vh;
+}
+
+.add-post{
+    width: 80%;
+    height: 30vh;  
+}
+
+.name{
+    color: #fff;
+    background-color: #422c79;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px 20px;
+    outline: none;
+    border: 2px solid #332459;
+    border-bottom: 1px solid black;
+    transition: 0.1s ease;
+}
+
+.name:hover{
+    opacity: 0.9;
+}
+
+.name:focus{
+    opacity: 1;
+}
+
+.name::placeholder{
+    color: #fff;
+}
+
+.post-input{
+    resize: none;
+    color: #fff;
+    background-color: #6f4acd;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    outline: white;
+    border: 2px solid #332459;
+    border-top: none;
+}
+
+.post-input:hover{
+    opacity: 0.9;
+}
+
+.post-input:focus{
+    opacity: 1;
+}
+
+.post-input::placeholder{
+    color:white
+}
+
+.post-but{
+    background-color: #6f4acd;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border: 1px solid #1e1414;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+}
+
+.post-but:hover{
+    background-color: #332459;
+}
+
+.posts{
+    background-color: #9500ff;
+    color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 95vh;
+    overflow-y: auto;
+    width: 40%;
+    padding: 2%;
+}
+
+li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style-type: none;
+}
+
+.posted{
+    border: 1px solid white;
+    background-color: #302222;
+    font-size: 25px;
+    padding: 3% 2% 0% 2%;
+    margin-bottom: 10%;
+}
+.posted-name{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #8400ff;
+    color: white;
+    border: none;
+    font-size: 22px;
+    padding: 1%;
+}
+.posted-content{
+    background-color: #422c79;
+    padding: 2%;
+}
