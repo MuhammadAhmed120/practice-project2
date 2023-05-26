@@ -9,12 +9,12 @@ body{
     align-items: center;
     justify-content: flex-end;
     width: 30%;
-    height: 75vh;
+    height: 80vh;
 }
 
 .add-post{
-    width: 80%;
-    height: 30vh;  
+    width: 75%;
+    height: 40vh;  
 }
 
 .name{
@@ -63,7 +63,99 @@ body{
 }
 
 .post-input::placeholder{
-    color:white
+    color:white;
+}
+
+.scroll{
+    overflow-x: auto;
+    width: 100%;
+    position: relative;
+    top: -20%;
+    left: 6.3%;
+    display: flex;
+    justify-content: center;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none; /* Hide the default scrollbar for Chrome/Safari/Opera */
+}
+
+.colors{
+    display: flex;
+    gap: 0.8rem;
+    white-space: nowrap;
+    width: max-content;
+}
+
+.colors>p{
+    cursor: pointer;
+    transition: 0.1s ease;
+    border: 1px solid black;
+}
+.colors>p:hover{
+    opacity: 0.7;
+    border: 1px solid white;
+}
+
+.black{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+.pink{
+    background-color: pink;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+.orange{
+    background-color: orange;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+.blue{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+.yellow{
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+.purple{
+    background-color: purple;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+.green{
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+.red{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+.brown{
+    background-color: brown;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+.gray{
+    background-color: gray;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
 }
 
 .post-but{
@@ -74,7 +166,8 @@ body{
     border: 1px solid #1e1414;
     cursor: pointer;
     transition: 0.2s ease;
-
+    position: relative;
+    top: -19%;
 }
 
 .post-but:hover{
