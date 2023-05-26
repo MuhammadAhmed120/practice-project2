@@ -4,6 +4,7 @@ var postDiv = document.querySelectorAll(".posts")[0];
 
 function addPost(){
     var posterValue = posterName.value;
+    
     var post = `
         <li class="posted">
             <span class="posted-name-con">
@@ -14,21 +15,49 @@ function addPost(){
             <p class="posted-content">${postValue.value}</p>  
         </li>
     `
-
     
     postDiv.innerHTML += post;
+
+    var postedCon =document.querySelector('.posted:last-child .posted-content');
+
+    if(postValue.style.backgroundColor === 'pink') {
+        postedCon.style.backgroundColor = 'pink';
+        postedCon.style.color = 'black';
+    } 
+    else if(postValue.style.backgroundColor === 'orange') {
+        postedCon.style.backgroundColor = 'orange';
+        postedCon.style.color = 'black';
+    }
+    else if(postValue.style.backgroundColor === 'brown') {
+        postedCon.style.backgroundColor = 'brown';
+    }
+    else if(postValue.style.backgroundColor === 'blue') {
+        postedCon.style.backgroundColor = 'blue';
+    }
+    else if(postValue.style.backgroundColor === 'yellow') {
+        postedCon.style.backgroundColor = 'yellow';
+        postedCon.style.color = 'black';
+    }
+    else if(postValue.style.backgroundColor === 'purple') {
+        postedCon.style.backgroundColor = 'purple';
+    }
+    else if(postValue.style.backgroundColor === 'green') {
+        postedCon.style.backgroundColor = 'green';
+    }
+    else if(postValue.style.backgroundColor === 'red') {
+        postedCon.style.backgroundColor = 'red';
+    }
+
     postValue.value = "";
 }
-// postValue.style.color = "white";
 
-var blackColor = false;
 function colorChange(colorpick) {
     if (colorpick === "black") {
         postValue.style.backgroundColor = "black";
         postValue.style.color = "white";
     } else if (colorpick === "pink") {
         postValue.style.backgroundColor = "pink";
-        postValue.style.color = "white";
+        postValue.style.color = "black";
     } else if (colorpick === "orange") {
         postValue.style.backgroundColor = "orange";
         postValue.style.color = "black";
