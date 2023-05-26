@@ -193,20 +193,20 @@ li{
 
 .posted{
     border: 1px solid white;
-    background-color: #302222;
+    background-color: #332459;
     font-size: 25px;
     padding: 3% 2% 0% 2%;
     margin-bottom: 10%;
 }
 .posted-name{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #8400ff;
-    color: white;
+    background: transparent;
+    color: #dfdede;
     border: none;
-    font-size: 22px;
-    padding: 1%;
+    font-size: 26px;
 }
 .posted-content{
-    background-color: #422c79;
+    /* background-color: #422c79; */
+    background-color: #6f4acd;
     padding: 2%;
 }
