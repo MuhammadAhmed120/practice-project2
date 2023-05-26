@@ -20,7 +20,10 @@ function addPost(){
 
     var postedCon =document.querySelector('.posted:last-child .posted-content');
 
-    if(postValue.style.backgroundColor === 'pink') {
+    if(postValue.style.backgroundColor === 'black') {
+        postedCon.style.backgroundColor = 'black';
+    } 
+    else if(postValue.style.backgroundColor === 'pink') {
         postedCon.style.backgroundColor = 'pink';
         postedCon.style.color = 'black';
     } 
